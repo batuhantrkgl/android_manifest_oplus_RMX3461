@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+    <!--
+    * target: RMX3461 || Realme 9 Speed Edition
+    * rom: Anything, You Can Do Bringup
+    -->
+
+    <!-- Remote -->
+    <remote fetch="https://github.com/pjgowtham/" name="pjgowtham" />
+    <remote fetch="https://github.com/batuhantrkgl/" name="batuhantrkgl" />
+
+    <!-- Device Trees -->
+    <project name="android_device_oplus_RMX3461" path="device/oplus/RMX3461" remote="pjgowtham" revision="lineage-20.0" />
+    <project name="android_device_oplus_sm8350-common" path="device/oplus/sm8350-common" remote="pjgowtham" revision="lineage-20.0" />
+
+    <!-- Vendor Trees-->
+    <project name="android_vendor_oplus_RMX3461" path="vendor/oplus/RMX3461" remote="batuhantrkgl" revision="lineage-20.0" />
+    <project name="android_vendor_oplus_sm8350-common" path="vendor/oplus/sm8350-common" remote="batuhantrkgl" revision="lineage-20.0" />
+    
+    <!--Hardware Trees-->
+    <project name="android_hardware_oplus" path="hardware/oplus" remote="pjgowtham" revision="lineage-20" />
+
+    <!-- Kernel Tree-->
+    <project name="android_kernel_oplus_sm8350" path="kernel/oplus/sm8350" remote="pjgowtham" revision="lineage-19.1-RMX3360-S-source" />
+</manfiest>
